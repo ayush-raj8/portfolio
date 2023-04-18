@@ -7,7 +7,7 @@ function Footer() {
         <footer style={{ marginTop: '0.5rem', paddingTop: '0.3rem', paddingBottom: '0.3rem'}} >
           <Row>
             <Col className='text-center py-3 ' style={{ fontWeight: 'bold', color: 'black' }}> 
-              Copyright &copy; NuGarner
+              
             </Col>
            </Row>
         </footer>
