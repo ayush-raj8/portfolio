@@ -13,8 +13,9 @@ function Starter() {
           <img className="d-block w-100" src={pic} alt="pic" />
         </div>
       </div>
+      <br></br>
       <div className="text-wrapper">
-        <Loader text="Hi, I'm_Ayush_Raj" delay={0.2} />
+        <Loader text="Hi, I'm_Ayush_Raj" delay={0.2} className="loader-text" />
       </div>
     </div>
   );

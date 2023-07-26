@@ -12,7 +12,10 @@ function App() {
       <Header />
       <main>
       <Container>
+      <br></br>
+        <br></br>
         <Starter></Starter>
+        <br></br>
         <br></br>
         <DataAccordion></DataAccordion>
       </Container>
