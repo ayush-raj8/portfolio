@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import data from "./data.js";
 import { Accordion, Card } from "react-bootstrap";
-import pic from "./pic.png";
+import pic from "./pic.jpeg";
 import Loader from "./Loader.js";
 function Starter() {
 
@@ -28,7 +28,7 @@ function Starter() {
   return (
     <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "20px" }}>
   <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-    <div style={{ height: '300px', width: '300px', borderRadius: '50%', overflow: 'hidden', border: '5px solid #64FFDA' }}>
+    <div style={{ height: '200px', width: '250px', borderRadius: '50%', overflow: 'hidden', border: '5px solid #64FFDA' }}>
       <img
         className="d-block w-100"
         src={pic}
