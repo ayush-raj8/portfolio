@@ -13,6 +13,7 @@ function App() {
       <main>
       <Container>
         <Starter></Starter>
+        <br></br>
         <DataAccordion></DataAccordion>
       </Container>
       <br></br>
