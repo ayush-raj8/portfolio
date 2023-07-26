@@ -27,7 +27,7 @@ function DataAccordion() {
                             <Accordion defaultActiveKey={subIndex} style={{backgroundColor: `#00000000`}}>
                             <Accordion.Item eventKey={subIndex} key={subIndex} style={{backgroundColor: `#00000000`}}>
                             <Accordion.Header>
-                                {item.title} {"  "}
+                                {item.title} {item.time}{"  "}
                                 { (item.url ? <a href={item.url} target="_blank" rel="noopener noreferrer">
                                                                         <i className="fa fa-external-link" aria-hidden="true"></i></a> :"") }</Accordion.Header>
                                 <Accordion.Body>

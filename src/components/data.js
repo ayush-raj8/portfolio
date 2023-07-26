@@ -2,25 +2,47 @@ const data1 = {
     "Experiences": [
         {
             "title": "Nutanix technology",
+            "subtitle": "MTS-1",
+            "summary": "Worked on golang and python microservices for backend.",
+            "time":"July 2023 - Present"
+        },
+        {
+            "title": "Nutanix technology",
             "subtitle": "MTS Intern",
-            "summary": "Worked on golang and python microservices for backend."
+            "summary": "Worked on golang and python microservices for backend.",
+            "time":"Aug 2022 - June 2023"
+        },
+        {
+            "title": "BITS Pilani,Goa",
+            "subtitle": "Undergraduate Teaching Assistant",
+            "summary": "Assisting Prof Swaroop Joshi for the course Software Development of Portable Devices (SDPD CS F341). Mentor student projects related to developing innovative software for ubiquitous computing and design labs to introduce them to upcoming trends in the field.",
+            "time":"Aug 2021 - Dec 2021"
+        },
+        {
+            "title": "BITS Pilani Goa",
+            "subtitle": "Undergraduate Teaching Assistant",
+            "summary": "Guiding the freshers towards computer programming in C language (Course CS F111).",
+            "time":"Mar 2021 - Jun 2021"
         },
         {
             "title": "I-exceed technology",
             "subtitle": "Summer Intern",
-            "summary": "Worked on edge detection system for documents using DeepLearning."
+            "summary": "Worked on edge detection system for documents using DeepLearning.",
+            "time":"May 2020 - July 2020"
         }
     ],
     "Education": [
         {
             "title": "BITS Pilani, Goa Campus",
             "subtitle": "Bachelor of Engineering in Computer Science",
-            "summary": "8.39/10.0 CGPA"
+            "summary": "8.39/10.0 CGPA",
+            "time":"Aug 2018 - May 2023"
         },
         {
             "title": "BITS Pilani, Goa Campus",
             "subtitle": "Master of Sciences in Chemistry",
-            "summary": "8.39/10.0 CGPA"
+            "summary": "8.39/10.0 CGPA",
+            "time":"Aug 2018 - May 2023"
         }
     ],
     "Projects": [
@@ -40,6 +62,15 @@ const data1 = {
             "summary": "Built an Android app classifies Iris flowers based on inputs containing shape and sizes of the flower. It also maintains a history of all sata enters using sqllite locally."
         }
     ],
+    "Published Research Papers": [
+        {
+            "title":"Towards Efficient Emotion Self-report Collection Using Human-AI Collaboration: A Case Study on Smartphone Keyboard Interaction",
+            "subtitle":"AI,Active Learning,Python, ACM",
+            "summary":"Using active learning we were able  fewer self-reports by 46% than the baselines to train the emotion self-report detection model and yet outperforms the baselines with an average self-report detection F-score of 85%",
+            "url":"https://dl.acm.org/doi/10.1145/3596269"
+        }
+    ],
+
     "Published Articles": [
         {
             "title": "Object Creation in Java",
