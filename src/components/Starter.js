@@ -14,7 +14,7 @@ function Starter() {
         </div>
       </div>
       <div className="text-wrapper">
-        <Loader text="Hi, I'm Ayush Raj" delay={0.2} />
+        <Loader text="Hi, I'm_Ayush_Raj" delay={0.2} />
       </div>
     </div>
   );
