@@ -49,3 +49,22 @@
 	-webkit-animation: moveBg 15s linear infinite;
 }
 
+/* Add this CSS in your App.css */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.resume-content {
+  /* Add your desired styling for the resume content */
+  /* For example: */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+

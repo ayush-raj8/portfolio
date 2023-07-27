@@ -14,7 +14,7 @@ function App() {
       <Container>
       <br></br>
         <br></br>
-        <Starter></Starter>
+        <Starter ></Starter>
         <br></br>
         <br></br>
         <DataAccordion></DataAccordion>
