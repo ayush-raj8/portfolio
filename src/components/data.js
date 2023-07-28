@@ -62,7 +62,7 @@ const data1 = {
             "summary": "Built an Android app classifies Iris flowers based on inputs containing shape and sizes of the flower. It also maintains a history of all sata enters using sqllite locally."
         },
         {
-            "title": "Multi App Search Enginge",
+            "title": "Multi App Search Engine",
             "subtitle": "Flask,React Js,Python",
             "summary": "Built a ReactJs Flask App to search across multiple apps like jira,confluence,slack and agrregate the results."
         }
