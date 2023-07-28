@@ -121,6 +121,16 @@ function generateResume() {
   </div>
 `;
 
+// Show the message if in LinkedIn in-app browser
+if (isLinkedInInAppBrowser()) {
+  const messageEl = document.getElementById('in-app-browser-message');
+  if (messageEl) {
+    messageEl.style.display = 'block';
+    setTimeout(() => {
+      messageEl.style.display = 'none';
+    }, 3000); // Hide the message after 3 seconds
+  }
+}
   // Create a new div element to render the resume content
   const resumeDiv = document.createElement('div');
   resumeDiv.innerHTML = resumeContent;
@@ -154,10 +164,17 @@ function generateResume() {
   document.head.removeChild(styleElement);
 }
 
+function isLinkedInInAppBrowser() {
+  const userAgent = window.navigator.userAgent;
+  return /linkedin/.test(userAgent.toLowerCase());
+}
 
 function Header() {
+
+  
   
   return (
+    <>
     <Navbar variant='dark' bg="dark" expand="lg" collapseOnSelect >
       <Container fluid>
         <Navbar.Brand href="/">Ayush Raj </Navbar.Brand>
@@ -174,6 +191,16 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
+    <div
+        id="in-app-browser-message"
+        className="position-fixed bottom-0 end-0 p-3 bg-danger text-white"
+        style={{ display: 'none', zIndex: 9999 }}
+      >
+        Downloading may not work in the in-app browser on LinkedIn.
+      </div>
+    
+  </>
   )
 }
 
