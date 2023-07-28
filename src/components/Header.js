@@ -41,6 +41,7 @@ function generateResume() {
       </div>
       <div style="flex: 1; text-align: right;">
         <p style="color: #8FEBDF; font-size: 20px; font-weight: bold; margin-bottom: 2px;"> Ayush Raj</p>
+        <p style="color: #e7e7f4; font-size: 8px; margin-bottom: 2px;">Software Developer,Nutanix</p>
         <p style="color: #e7e7f4; font-size: 8px;margin-bottom: 2px;">ayushraj763@gmail.com</p>
         <p style="color: #e7e7f4; font-size: 8px; margin-bottom: 2px;">BITS Pilani, Goa</p>
         <p style="color: #e7e7f4; font-size: 8px;margin-bottom: 2px;">B.E Computer Science and MSc. Chemistry</p>

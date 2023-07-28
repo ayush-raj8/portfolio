@@ -34,16 +34,11 @@ const data1 = {
     "Education": [
         {
             "title": "BITS Pilani, Goa Campus",
-            "subtitle": "Bachelor of Engineering in Computer Science",
-            "summary": "8.55/10.0 CGPA",
-            "time":"Aug 2018 - May 2023"
-        },
-        {
-            "title": "BITS Pilani, Goa Campus",
-            "subtitle": "Master of Sciences in Chemistry",
+            "subtitle": "B.E. Computer Science and MSc. Chemistry",
             "summary": "8.55/10.0 CGPA",
             "time":"Aug 2018 - May 2023"
         }
+        
     ],
     "Projects": [
         {
