@@ -1,13 +1,4 @@
-https://www.colorhexa.com/f8f9fa
-https://codepen.io/WebsiteMentor/pen/BaVgvoE
-git init 
-git remote add origin git@github.com:ayush-raj8/ayush-raj8.github.io.git
 
-git push --set-upstream https://ayush-raj8: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@github.com/ayush-raj8.github.io.git main
-
-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
-git clone https://ayush-raj8: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@github.com/ayush-raj8.github.io.git main
-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
 
 echo "# ayush-raj8.github.io" >> README.md
 git init
