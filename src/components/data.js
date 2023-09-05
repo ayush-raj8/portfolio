@@ -57,10 +57,15 @@ const data1 = {
             "summary": "Built an Android app classifies Iris flowers based on inputs containing shape and sizes of the flower. It also maintains a history of all sata enters using sqllite locally."
         },
         {
-            "title": "nuGarner : Multi App Search Engine",
+            "title": "nuGarner : Multi App Search Engine for your company",
             "subtitle": "Flask,React Js,Python",
-            "summary": "Built a ReactJs Flask App to search across multiple apps like jira,confluence,slack and agrregate the results."
-        }
+            "summary": "Built a ReactJs Flask App to search a query across multiple apps like jira,confluence,slack and agrregate the results for Nutanix hackathon."
+        },
+        {
+            "title": "PasteShare: Share your data safely",
+            "subtitle": "React Js,Python,Firebase",
+            "summary": "Built a ReactJs firebase app where one can paste his data/code/text and share with anyone via a link and password. "
+        },
     ],
     "Published Research Papers": [
         {
