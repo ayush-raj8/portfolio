@@ -2,16 +2,23 @@ import React, { useState, useEffect } from "react";
 import pic from "./pic.jpeg";
 import Loader from "./Loader.js";
 import "./starter.css"; // Import the CSS file
+import { Avatar } from "@mui/material";
 
 function Starter() {
   // Your existing code here
 
   return (
     <div className="container">
-      <div className="image-container">
-        <div className="image-wrapper">
-          <img className="d-block w-100" src={pic} alt="pic" />
-        </div>
+        <div className="image-container">
+        <Avatar
+          alt="Ayush Raj"
+          src={pic}
+          sx={{
+            width: 200,
+            height: 200,
+            border: "5px solid #64FFDA",
+          }}
+        />
       </div>
       <br></br>
       <div className="text-wrapper">

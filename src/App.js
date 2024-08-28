@@ -5,12 +5,14 @@ import Starter from './components/Starter';
 import DataAccordion from './components/DataAccordion';
 import {HashRouter as Router } from  'react-router-dom';
 import GetInTouch from './components/GetInTouch';
+import {Box, Divider as MuiDivider} from '@mui/material';
 
 function App() {
   return (
     <Router >
+      <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Header />
-      <main>
+      <main className='py-1 flex-grow-1'>
       <Container>
       <br></br>
         <br></br>
@@ -23,6 +25,7 @@ function App() {
       <GetInTouch/>
       </main> 
       <Footer />
+      </Box>
     </Router>
   );
 }

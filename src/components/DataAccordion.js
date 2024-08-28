@@ -1,58 +1,80 @@
 import React from "react";
-import { Accordion } from "react-bootstrap";
+import {
+    Accordion,
+    AccordionSummary,
+    AccordionDetails,
+    Typography,
+    Stepper,
+    Step,
+    StepLabel,
+    StepContent,
+    Chip,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import data from "./data.js";
-import Badge from 'react-bootstrap/Badge';
 
 function DataAccordion() {
+    const badgeColors = ["warning", "info", "success", "error", "primary"];
+    const len = badgeColors.length;
 
-    Object.keys(data).map((key,index) => {
-        console.log("Outer key: ", key,index);
-        data[key].map((value, index) => {
-            console.log("Inner key: ", index, value);
-        });
-    });
-    let arr=["warning","light","info","success","danger"];
-    let len= arr.length
-  return (
-        <div  >
+    return (
+        <div>
             {Object.keys(data).map((key, index) => (
-                <Accordion defaultActiveKey={index} style={{backgroundColor: `#00000000`}}>
-                <Accordion.Item eventKey={index} key={index} style={{backgroundColor: `#00000000`}}>
-                <Accordion.Header style={{ backgroundColor: 'rgba(0,0,0,0)' }} >{key}</Accordion.Header>
-                <Accordion.Body >
-                
-                    {
-                        data[key].map((item, subIndex) => {
-                            return(  
-                            <Accordion defaultActiveKey={subIndex} style={{backgroundColor: `#00000000`}}>
-                            <Accordion.Item eventKey={subIndex} key={subIndex} style={{backgroundColor: `#00000000`}}>
-                            <Accordion.Header>
-                                {item.title} {item.time}{"  "}
-                                { (item.url ? <a href={item.url} target="_blank" rel="noopener noreferrer">
-                                                                        <i className="fa fa-external-link" aria-hidden="true"></i></a> :"") }</Accordion.Header>
-                                <Accordion.Body>
-                                        {   
-                                            item.subtitle.split(',').map((word,index) => (
-                                                <Badge pill bg={arr[index%len]} text={arr[index%len]==="light"?"dark":"light"}>{word}</Badge>
-                                                
-                                            ))
-                                        }
-                                    <br></br>
-                                    <p style={{color:"#64ffda "}}>{item.summary}</p>
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            </Accordion>
-                            );
-                            
-                        })
-                    }
-                </Accordion.Body>
-                </Accordion.Item>
+                <Accordion key={index} sx={{
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    backdropFilter: 'blur(10px)',
+                    borderRadius: '10px',
+                    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                    marginBottom: '20px'
+                }}>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                        <Typography sx={{ color: "#fff" }}>{key}</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Stepper orientation="vertical">
+                            {data[key].map((item, subIndex) => (
+                                <Step key={subIndex} active>
+                                    <StepLabel  >
+                                    <Typography sx={{ color: "white"}}>
+                                    {item.title} {item.time}{" "}
+                                       
+                                        
+                                        {item.url && (
+                                            <a href={item.url} target="_blank" rel="noopener noreferrer">
+                                                <i style={{color: "white"}} className="fa fa-external-link" aria-hidden="true"></i>
+                                            </a>
+                                        )}
+                                         </Typography>
+                                    </StepLabel>
+                                    <StepContent sx={{
+                                        mt: 2,
+                                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                                        backdropFilter: 'blur(10px)',
+                                        borderRadius: '10px',
+                                        padding: '10px',
+                                        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)'
+                                    }}>
+                                        {item.subtitle.split(",").map((word, i) => (
+                                            <Chip
+                                                key={i}
+                                                color={badgeColors[i % len]}
+                                                sx={{ mr: 1, mb: 1 }}
+                                                variant="filled"
+                                                label={word}
+                                            />
+                                        ))}
+                                        <Typography sx={{ mt: 2, color: "#64ffda" }}>
+                                            {item.summary}
+                                        </Typography>
+                                    </StepContent>
+                                </Step>
+                            ))}
+                        </Stepper>
+                    </AccordionDetails>
                 </Accordion>
             ))}
         </div>
-  
-  );
+    );
 }
 
 export default DataAccordion;
