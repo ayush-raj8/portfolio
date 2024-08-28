@@ -10,12 +10,25 @@ import {
     StepContent,
     Chip,
 } from "@mui/material";
+import WorkIcon from "@mui/icons-material/Work";
+import SchoolIcon from "@mui/icons-material/School";
+import BuildIcon from "@mui/icons-material/Build";
+import ArticleIcon from "@mui/icons-material/Article";
+import BookIcon from "@mui/icons-material/Book";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import data from "./data.js";
 
 function DataAccordion() {
     const badgeColors = ["warning", "info", "success", "error", "primary"];
     const len = badgeColors.length;
+
+    const keyIcons = {
+        "Experiences": <WorkIcon sx={{ color: "#fff", mr: 1 }} />,
+        "Education": <SchoolIcon sx={{ color: "#fff", mr: 1 }} />,
+        "Projects": <BuildIcon sx={{ color: "#fff", mr: 1 }} />,
+        "Published Research Paper": <BookIcon sx={{ color: "#fff", mr: 1 }} />,
+        "Published Articles": <ArticleIcon sx={{ color: "#fff", mr: 1 }} />,
+    };
 
     return (
         <div>
@@ -28,6 +41,8 @@ function DataAccordion() {
                     marginBottom: '20px'
                 }}>
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                       
+                        {keyIcons[key]}
                         <Typography sx={{ color: "#fff" }}>{key}</Typography>
                     </AccordionSummary>
                     <AccordionDetails>

@@ -11,9 +11,12 @@
 .text-wrapper {
   flex: 1;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   margin-top: 20px;
+  text-align: left;
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -23,12 +26,9 @@
   }
 
   .text-wrapper {
-    text-align: center;
+    width: 100%; /* Make sure it takes the full width */
+    text-align: left; /* Text starts from the left on smaller screens */
     margin-top: 0;
-  }
-
-  .text-wrapper .loader-text {
-    font-size: 14px;
-    white-space: nowrap;
+    padding: 0 10px; /* Optional: Add slight padding if needed */
   }
 }

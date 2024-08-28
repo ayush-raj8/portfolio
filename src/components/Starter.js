@@ -1,15 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import pic from "./pic.jpeg";
-import Loader from "./Loader.js";
 import "./starter.css"; // Import the CSS file
-import { Avatar } from "@mui/material";
+import { Avatar, Typography } from "@mui/material";
 
 function Starter() {
-  // Your existing code here
-
   return (
     <div className="container">
-        <div className="image-container">
+      <div className="image-container">
         <Avatar
           alt="Ayush Raj"
           src={pic}
@@ -22,7 +19,13 @@ function Starter() {
       </div>
       <br></br>
       <div className="text-wrapper">
-        <Loader text="Hi, I'm_Ayush_Raj" delay={0.2} className="loader-text" />
+        <Typography variant="h4" sx={{ color:"#64ffda ", textTransform:"None" }}>
+          Ayush Raj
+        </Typography>
+        <Typography variant="subtitle1" sx={{ color: "#FFFFFF", textTransform:"None" }}>
+          I am a software developer specialized in backend technologies like
+          django, microservices, redis, etc. Besides this, I've worked on react.js and golang.
+        </Typography>
       </div>
     </div>
   );

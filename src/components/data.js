@@ -2,7 +2,7 @@ const data1 = {
     "Experiences": [
         {
             "title": "Nutanix technology",
-            "subtitle": "MTS-1",
+            "subtitle": "MTS-1, Python, Golang, Microservices",
             "summary": "Worked on golang and python microservices for backend.",
             "time":"July 2023 - Present"
         },
@@ -67,7 +67,7 @@ const data1 = {
             "summary": "Built an Android app classifies Iris flowers based on inputs containing shape and sizes of the flower. It also maintains a history of all sata enters using sqllite locally."
         }
     ],
-    "Published Research Papers": [
+    "Published Research Paper": [
         {
             "title":"Towards Efficient Emotion Self-report Collection Using Human-AI Collaboration: A Case Study on Smartphone Keyboard Interaction",
             "subtitle":"Active Learning,Association for Computing Machinery",
