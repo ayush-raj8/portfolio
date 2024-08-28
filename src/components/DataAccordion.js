@@ -40,7 +40,7 @@ function DataAccordion() {
                     boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                     marginBottom: '20px'
                 }}>
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: "white"}}/>}>
                        
                         {keyIcons[key]}
                         <Typography sx={{ color: "#fff" }}>{key}</Typography>
