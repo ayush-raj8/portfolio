@@ -42,24 +42,19 @@ const data1 = {
     ],
     "Projects": [
         {
+            "title": "Event listing and booking website",
+            "subtitle": "ReactJs, Redux, Context API, JWT, RBAC, Django, Middleware, Firebase, Redis",
+            "summary": "Developed a website using React.js for the frontend and Django for the backend, with Firebase for storage and Redis as a caching layer.\n\nImplemented state management using hooks, Context API, and Redux. The platform allows creators to list classes and events, while users can search, book free trials, and purchase event tickets. Tickets contain a QR code that can be verified by creator listing the event.\n\nIntegrated Firebase authentication and RBAC authorization to differentiate between creators and regular users. Gained experience in scheduling tasks in Django to keep the Redis cache up to date. Utilized JWT for request authentication at the Django backend via custom middleware."
+        },
+        {
             "title": "Full text search with filters",
             "subtitle": "Python, Django, Fuzzy, Tokenization",
             "summary": "Implemented a full text search engine in django with typo tolerance using fuzzy matching, and enhanced the API to support filtering options."
         },
         {
-            "title": "Concurrent File Downloader",
-            "subtitle": "Golang,Fyne,Concurrency",
-            "summary": "Built a Golang based app that leverage concurrrency to download multiple files at once using Golang's go routines."
-        },
-        {
             "title": "nuGarner : Multi App Search Engine for your company",
             "subtitle": "Flask,React Js,Python",
             "summary": "Built a ReactJs Flask App to search a query across multiple apps like jira,confluence,slack and agrregate the results for Nutanix hackathon."
-        },
-        {
-            "title": "PasteShare: Share your data safely",
-            "subtitle": "React Js,Python,Firebase",
-            "summary": "Built a ReactJs firebase app where one can paste his data/code/text and share with anyone via a link and password. "
         },
         {
             "title": "Iris Classifier Android App",

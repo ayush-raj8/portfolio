@@ -78,7 +78,7 @@ function DataAccordion() {
                                                 label={word}
                                             />
                                         ))}
-                                        <Typography sx={{ mt: 2, color: "#64ffda" }}>
+                                        <Typography sx={{ mt: 2, color: "#64ffda",  whiteSpace: 'pre-line' }}>
                                             {item.summary}
                                         </Typography>
                                     </StepContent>
