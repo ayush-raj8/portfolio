@@ -1,18 +1,24 @@
-import React from 'react'
-import { Row,Col } from 'react-bootstrap'
+import React from "react";
+import data from "./data";
+
+const links = data.Links;
 
 function Footer() {
-  return (
-    <div>
-        <footer style={{ marginTop: '0.5rem', paddingTop: '0.3rem', paddingBottom: '0.3rem'}} >
-          <Row>
-            <Col className='text-center py-3 ' style={{ fontWeight: 'bold', color: 'black' }}> 
-              
-            </Col>
-           </Row>
+    return (
+        <footer className="site-footer">
+            <p>
+                Designed & Built by{" "}
+                <a
+                    href={links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="footer-link"
+                >
+                    Ayush Raj
+                </a>
+            </p>
         </footer>
-    </div>
-  )
+    );
 }
 
-export default Footer
+export default Footer;
