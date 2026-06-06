@@ -1,6 +1,6 @@
 const data1 = {
     "Links": {
-        resume:   "https://drive.google.com/file/d/1GnovDRXStxFEpFjgJDxiJP-yoZrS8c68/view?usp=sharing",
+        resume:   "https://drive.google.com/file/d/1F3fl5pIlO54T317fTfvDWnlfk2kQ3ukQ/view?usp=sharing",
         github:   "https://github.com/ayush-raj8",
         linkedin: "https://linkedin.com/in/ayush-r-3427b71ab",
         medium:   "https://medium.com/@ayushraj763",
