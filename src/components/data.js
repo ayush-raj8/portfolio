@@ -49,7 +49,8 @@ const data1 = {
                 "Implemented Role-Based Access Control (RBAC), JWT authentication, and creator/admin/user workflows across the platform.",
                 "Built event-driven async workflows using Redis and Celery for booking confirmations, notifications, payment reconciliation, and background processing.",
                 "Integrated Razorpay payment gateway and webhook processing for reliable booking, payment verification, and refund handling.",
-                "Implemented real-time notifications using Server-Sent Events (SSE) and asynchronous messaging patterns."
+                "Implemented real-time notifications using Server-Sent Events (SSE) and asynchronous messaging patterns.",
+                "Reduced search API requests by ~70–90% using debounced client-side search."
             ],
             "tags": ["Django", "PostgreSQL", "Redis", "Celery", "Razorpay", "Firebase", "JWT", "SSE"]
         }
@@ -73,28 +74,10 @@ const data1 = {
     ],
     "Projects": [
         {
-            "title": "Event Listing & Booking Platform",
-            "subtitle": "ReactJs, Redux, Context API, JWT, RBAC, Django, Firebase, Redis",
-            "summary": "Full-stack marketplace where creators list dance classes and events; users can search, book free trials, and purchase tickets with QR-code verification. Includes JWT auth, RBAC, Redis caching, and scheduled cache updates.",
-            "tags": ["React", "Redux", "Django", "Redis", "Firebase", "JWT", "RBAC"]
-        },
-        {
-            "title": "Full-Text Search Engine with Filters",
-            "subtitle": "Python, Django, Fuzzy Matching, Tokenization",
-            "summary": "Implemented a full-text search engine in Django with typo tolerance via fuzzy matching, enhanced with multi-dimensional filter support.",
-            "tags": ["Python", "Django", "Search", "Fuzzy Matching"]
-        },
-        {
             "title": "nuGarner – Multi-App Search Engine",
             "subtitle": "Flask, React.js, Python",
             "summary": "Hackathon project: aggregates search results from Jira, Confluence, and Slack into a single unified interface for Nutanix internal teams.",
             "tags": ["Flask", "React", "Python", "Hackathon"]
-        },
-        {
-            "title": "Iris Classifier Android App",
-            "subtitle": "Android, Machine Learning, Java, Python",
-            "summary": "Android app that classifies Iris flowers from petal/sepal measurements using an ML model; persists classification history locally via SQLite.",
-            "tags": ["Android", "Java", "Machine Learning", "SQLite"]
         }
     ],
     "Published Research Paper": [

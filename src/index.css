@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════════
    Classy Editorial Theme — Ayush Raj Portfolio
-   Warm-tone dark palette with champagne-gold accent
+   Dark palette with electric-blue accent
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
@@ -11,12 +11,12 @@
     --bg-card-hover:    #161616;
     --bg-elevated:      #121212;
 
-    /* Accent — amber phosphor */
-    --accent:           #ffb800;
-    --accent-bright:    #ffc833;
-    --accent-dim:       rgba(255, 184, 0, 0.10);
-    --accent-hover:     rgba(255, 184, 0, 0.18);
-    --accent-shadow:    rgba(255, 184, 0, 0.25);
+    /* Accent — electric blue */
+    --accent:           #2f80ff;
+    --accent-bright:    #66a3ff;
+    --accent-dim:       rgba(47, 128, 255, 0.10);
+    --accent-hover:     rgba(47, 128, 255, 0.18);
+    --accent-shadow:    rgba(47, 128, 255, 0.25);
 
     /* Text — CRT phosphor tones */
     --text-bright:      #f0f0f0;    /* hero text, headings */
@@ -106,8 +106,8 @@ body::before {
     opacity: 0.035;
     background-image: repeating-linear-gradient(
         0deg,
-        rgba(255, 184, 0, 0.4) 0px,
-        rgba(255, 184, 0, 0.4) 1px,
+        rgba(47, 128, 255, 0.4) 0px,
+        rgba(47, 128, 255, 0.4) 1px,
         transparent 1px,
         transparent 3px
     );

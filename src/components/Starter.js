@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "../assests/pic.png";
+import pic from "../assests/profile_img.webp";
 import data from "./data";
 
 const links = data.Links;
